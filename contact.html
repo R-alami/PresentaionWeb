@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Center TECHNOLOGiES || Contact us</title>
+    <meta charset="utf-8">
+    <meta name="author" content="reza">
+    <meta name="keywords" content="robot, robotic, technology, center technologies, future, artificial intelligence">
+    <meta name="description" content="Artificial intelligence (AI) is a hot topic.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.css" >
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    </head>
+   
+    <body>
+        
+    <script>
+       
+        function validateForm(){
+            
+            var nameField = document.forms["contact_form"]["name"].value;
+            var lastNameField = document.forms["contact_form"]["lastname"].value;
+            var jobField = document.forms["contact_form"]["job"].value;
+            var mailField = document.forms["contact_form"]["mail"].value;
+            var comuntryField = document.forms["contact_form"]["country"].value;
+            var phoneField = document.forms["contact_form"]["phone"].value;
+          
+            if (nameField==""){
+                alert("Please Enter Your Name...!");
+                return false;
+            }
+            
+            if (lastNameField==""){
+                alert("Please Enter Your Last Name ...!");
+                return false;
+            }
+             if (mailField==""){
+                alert("Please Enter Set Your EMail...!");
+                return false;
+            }
+            }
+            
+          
+   
+    </script>
+        
+        <header>
+            <img src="style/img/logo.png" />
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html" >About us</a></li>
+                    <li><a href="contact.html" >Contact</a></li>
+                    <li><a href="page1.html" >Technology</a></li>
+                </ul>
+            </nav>
+            
+            
+        </header>
+        
+        <main> 
+            <section class="contact_sec">
+               
+               <article class="art_text">
+                    <p>Artificial intelligence (AI) is a hot topic. Inspiring and practical use cases are emerging on a daily basis. But where are organisations in the planning for AI`s adoption? What does it take to achieve business value out of AI? How long will it take for AI to achieve mainstream traction?
+
+                        This e-book summarises answers and results of recent interviews with business leaders around EMEA that explored enterprise readiness for artificial intelligence (AI). Based on the results of that survey, this e-book delves into the biggest opportunities and challenges organizations recognize on their way to AI adoption.</p>
+                </article>
+                
+                <article class="contact_form">
+                    <form name="contact_form" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                        <div><lable>Name: *</lable><br><input type="text" name="name"> <br></div>
+                        <div><lable>Laast Name: *</lable><br> <input type="text" name="lastname"> <br></div>
+                        <div><lable>Email Address: *</lable><br><input type="email" name="mail"> <br></div>
+                        <div><lable>Job title: </lable><br><input type="text" name="job"> <br></div>
+                        <div><lable>Country:</lable><br><input list="country" name="country"> <br></div>
+                        <div>
+                            <datalist id="country">
+                                <option value="Germany">
+                                <option value="France">
+                                <option value="Italy">
+                                <option value="Niederland">
+                                <option value="Poland">
+                            </datalist>
+                        </div>
+                        <div><lable>Business Phone:</lable> <br><input type="text" name="phone"> <br></div>
+                        <div><lable>Your Text: *</lable><br><textarea name="message"  placeholder="Write something.." style="height:200px"></textarea><br></div>
+                        <br>
+                        <div><button class="sub_btn" type="submit" >Send</button></div>
+                        
+                    </form>
+                </article>
+                
+            </section>
+        </main>
+        
+        <footer>
+           <section class="sec_footer">
+               
+               <article class="icon_footer">
+                   <p>Follow us :</p><br>
+                   <a href="#"><img src="style/img/facebook.png" /></a>
+                   <a href="#"><img src="style/img/github.png" /></a>
+                   <a href="#"><img src="style/img/twitter.png" /></a>
+                   <a href="#"><img src="style/img/google_plus.png" /></a>
+               </article>
+               
+               <p>&copy;Copyright 2017</p>
+             
+           </section>
+        </footer>
+        
+    </body>
+</html>
